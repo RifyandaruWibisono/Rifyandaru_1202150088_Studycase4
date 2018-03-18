@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lesson4.android.rifyandaru_1202150088_modul4.Gambar">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/images"
+        android:layout_toRightOf="@+id/images"
+        android:hint="Cari Gambar" />
+
+    <EditText
+        android:id="@+id/gambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttton_gambar"
+        android:layout_alignStart="@+id/buttton_gambar"
+        android:layout_below="@+id/judul"
+        android:layout_marginTop="19dp"
+        android:hint="Masukan URL Gambar" />
+
+    <Button
+        android:id="@+id/buttton_gambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:hint="Klik untuk mencari Gambar"
+        android:onClick="onClick">
+
+    </Button>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/images"
+        android:layout_below="@+id/buttton_gambar"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
